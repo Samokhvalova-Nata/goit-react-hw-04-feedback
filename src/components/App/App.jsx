@@ -32,7 +32,7 @@ export const App = () => {
     return (
       <Container>
         <Section title="Please leave feedback">
-          <FeedbackOptions options={['good', 'neutral', 'bad']} onLeaveFeedback={handleClick}/>
+          <FeedbackOptions options={Object.keys({ good, neutral, bad })} onLeaveFeedback={handleClick}/>
         </Section>
         <Section title="Statistics">
           {total > 0 ?
